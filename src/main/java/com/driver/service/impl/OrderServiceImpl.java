@@ -64,7 +64,7 @@ public class OrderServiceImpl implements OrderService{
 	public void deleteOrder(String orderId) throws Exception {
 		// TODO Auto-generated method stub
 		 OrderEntity o=repo.findByOrderId(orderId);
-		repo.deleteById(o.getId());
+		repo.delete(o);
 	}
 
 	@Override
