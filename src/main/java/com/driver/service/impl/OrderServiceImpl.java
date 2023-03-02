@@ -10,7 +10,7 @@ import com.driver.io.repository.OrderRepository;
 import com.driver.service.OrderService;
 import com.driver.shared.dto.OrderDto;
 
-class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService{
 	@Autowired 
 	OrderRepository repo;
 
