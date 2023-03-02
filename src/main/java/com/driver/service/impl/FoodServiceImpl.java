@@ -59,7 +59,7 @@ public class FoodServiceImpl implements FoodService{
 	public void deleteFoodItem(String id) throws Exception {
 		// TODO Auto-generated method stub
 		FoodEntity f=repo.findByFoodId(id);
-		repo.deleteById(f.getId());
+		repo.delete(f);
 		
 	}
 
