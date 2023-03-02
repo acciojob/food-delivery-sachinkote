@@ -46,6 +46,7 @@ public class OrderController {
 		dto.setCost(order.getCost());
 		dto.setItems(order.getItems());
 		dto.setUserId(order.getUserId());
+		dto.setStatus(true);
 		OrderDto dto1 =service.createOrder(dto);
 		OrderDetailsResponse  res=new OrderDetailsResponse ();
 		res.setCost(dto1.getCost());
