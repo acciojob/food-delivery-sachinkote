@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.driver.io.entity.OrderEntity;
 import com.driver.io.repository.OrderRepository;
 import com.driver.service.OrderService;
 import com.driver.shared.dto.OrderDto;
 
+@Service
 public class OrderServiceImpl implements OrderService{
 	@Autowired 
 	OrderRepository repo;
