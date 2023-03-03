@@ -3,6 +3,7 @@ package com.driver.model.request;
 public class FoodDetailsRequestModel {
 
 	private String foodName;
+        private String foodId;
 	private String foodCategory;
 	private float foodPrice;
 	public String getFoodName() {
@@ -27,6 +28,14 @@ public class FoodDetailsRequestModel {
 
 	public void setFoodPrice(float foodPrice) {
 		this.foodPrice = foodPrice;
+	}
+
+       public String getFoodId() {
+		return foodId;
+	}
+
+	public void setFoodId(String foodId) {
+		this.foodId = foodId;
 	}
 
 }
