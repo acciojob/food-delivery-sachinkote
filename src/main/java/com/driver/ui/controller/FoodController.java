@@ -43,7 +43,7 @@ public class FoodController {
 		food.setFoodCategory(foodDetails.getFoodCategory());
 		food.setFoodName(foodDetails.getFoodName());
 		food.setFoodPrice(foodDetails.getFoodPrice());
-		//food.setId(foodDetails.get)
+		food.setFoodId(foodDetails.getFoodId());
 		FoodDto f=service.createFood(food);
 		reposne.setFoodCategory(f.getFoodCategory());
 		reposne.setFoodName(f.getFoodName());
